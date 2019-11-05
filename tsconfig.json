@@ -17,7 +17,57 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-core": [
+        "dist/ngx-core"
+      ],
+      "ngx-core/*": [
+        "dist/ngx-core/*"
+      ],
+      "ngx-extensions": [
+        "dist/ngx-extensions"
+      ],
+      "ngx-extensions/*": [
+        "dist/ngx-extensions/*"
+      ],
+      "ngx-filter": [
+        "dist/ngx-filter"
+      ],
+      "ngx-filter/*": [
+        "dist/ngx-filter/*"
+      ],
+      "ngx-notifications": [
+        "dist/ngx-notifications"
+      ],
+      "ngx-notifications/*": [
+        "dist/ngx-notifications/*"
+      ],
+      "ngx-logging": [
+        "dist/ngx-logging"
+      ],
+      "ngx-logging/*": [
+        "dist/ngx-logging/*"
+      ],
+      "ngx-auth": [
+        "dist/ngx-auth"
+      ],
+      "ngx-auth/*": [
+        "dist/ngx-auth/*"
+      ],
+      "ngx-tracker": [
+        "dist/ngx-tracker"
+      ],
+      "ngx-tracker/*": [
+        "dist/ngx-tracker/*"
+      ],
+      "ngx-api": [
+        "dist/ngx-api"
+      ],
+      "ngx-api/*": [
+        "dist/ngx-api/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
