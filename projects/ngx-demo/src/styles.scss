@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+$body-bg: #121212;
+$body-color: white;
+
+@import "~bootstrap";
+@import "bootstrap-dark/bootstrap-dark";
