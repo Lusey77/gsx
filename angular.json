@@ -443,6 +443,46 @@
           }
         }
       }
+    },
+    "ngx-odata-builder": {
+      "projectType": "library",
+      "root": "projects/ngx-odata-builder",
+      "sourceRoot": "projects/ngx-odata-builder/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-odata-builder/tsconfig.lib.json",
+            "project": "projects/ngx-odata-builder/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-odata-builder/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-odata-builder/src/test.ts",
+            "tsConfig": "projects/ngx-odata-builder/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-odata-builder/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-odata-builder/tsconfig.lib.json",
+              "projects/ngx-odata-builder/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "ngx-core"
 }

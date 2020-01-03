@@ -66,6 +66,12 @@
       ],
       "ngx-api/*": [
         "dist/ngx-api/*"
+      ],
+      "ngx-odata-builder": [
+        "dist/ngx-odata-builder"
+      ],
+      "ngx-odata-builder/*": [
+        "dist/ngx-odata-builder/*"
       ]
     }
   },
