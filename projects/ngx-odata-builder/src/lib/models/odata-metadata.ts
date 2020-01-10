@@ -1,5 +1,3 @@
-
-
 export type ODataMetadata = {
   /*
    * Represents Minimal Metadata

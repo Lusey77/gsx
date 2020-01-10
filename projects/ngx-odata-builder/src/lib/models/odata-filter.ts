@@ -16,8 +16,6 @@ export interface ODataLogicalOperatorFunction { }
 
 export type FilterExpression = string;
 
-export type StringFilterExpression =
-
 export function substringof(property: string | FilterExpression, value: string): FilterExpression {
   return `substringof('${value}', ${property})`;
 }
@@ -43,7 +41,7 @@ export function replace(property: string | FilterExpression, find: string, repla
 }
 
 export function substring(property: string | FilterExpression, position: number, length?: number): FilterExpression {
-
+  return `?`;
 }
 
 export function toupper(property: string | FilterExpression): FilterExpression {
@@ -58,4 +56,4 @@ export function trim(property: string | FilterExpression): FilterExpression {
   return `trim(${property})`;
 }
 
-export function concat()
+// export function concat()
